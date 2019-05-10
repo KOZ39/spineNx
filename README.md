@@ -5,7 +5,7 @@
 * ['그 게임'이 부럽지 않은 고해상도 SD를 만들어 보자](https://gall.dcinside.com/mgallery/board/view/?id=micateam&no=954406)
 
 ## Other Tools
-* [spine->gif](https://www.grifon-kryuger.com/spine-gif/)
+* [spine-gif](https://www.grifon-kryuger.com/spine-gif/)
 * [waifu2x](https://github.com/nagadomi/waifu2x)
 * [waifu2x-caffe](https://github.com/lltcggie/waifu2x-caffe)
 

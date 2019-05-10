@@ -5,8 +5,6 @@ import sys
 multiple = 1
 
 def repl(mo):
-    global multiple
-
     mo = str(int(mo.group()) * multiple)
 
     return mo
@@ -19,7 +17,7 @@ if len(sys.argv) > 0:
             with open(argv, 'r') as f:
                 data = f.read()
 
-            multiple = 2048 // int(re.search(r'size: ([0-9]+)', data).group(1))
+            multiple = 2048 // int(re.search(r'(?<=size: )([0-9]+)', data).group())
             data = re.sub(r'(?<=[, ])([0-9]+)', repl, data)
 
             with open(argv.replace('.atlas', f'_{multiple}x.atlas'), 'w') as f:
