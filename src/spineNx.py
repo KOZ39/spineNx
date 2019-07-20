@@ -2,8 +2,6 @@ import os
 import re
 import sys
 
-multiple = 1
-
 def repl(mo):
     mo = str(int(mo.group()) * multiple)
 
